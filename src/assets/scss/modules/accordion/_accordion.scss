@@ -1,0 +1,192 @@
+.js-accordion {
+
+  &__top-section {
+    display: none;
+
+    &:after {
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+
+    .js-accordion--js-enabled & {
+      display: block;
+    }
+  }
+
+  &__expand-button {
+    float: right;
+    font-family: $nta-light;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $govuk-blue;
+    padding: 0.5em 0;
+  }
+
+  &__wrapper {
+    border-bottom: 1px solid $grey-2;
+
+    &:before {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__section {
+    border-top: 1px solid $grey-2;
+  }
+
+  &__header {
+    padding: 14px 0;
+    display: table;
+    width: 100%;
+
+    &-left {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &-right {
+      display: table-cell;
+      vertical-align: middle;
+      width: 30px;
+      display: none;
+    }
+
+    &-icon {
+      background: none;
+      border: none;
+      width: 16px;
+      height: 16px;
+      background-image: url('../images/icons-plus-minus.png');
+      background-image: url('../images/icons-plus-minus.svg'),linear-gradient(transparent, transparent);
+      background-repeat: no-repeat;
+      background-position: 0 -16px;
+      padding: 0;
+      margin: 0;
+      .js-accordion--up-down-arrows & {
+        background-image: url('../images/icons-up-down.png');
+        background-image: url('../images/icons-up-down.svg'),linear-gradient(transparent, transparent);
+      }
+      .js-accordion__section--open & {
+        background-position: 0 0;
+        .js-accordion--up-down-arrows & {
+          background-position: 0 0;
+        }
+      }
+      .js-accordion__header--hover & {
+        cursor: pointer;
+      }
+    }
+
+    &--hover {
+      cursor: pointer;
+      background: $grey-4;
+    }
+
+    .js-accordion--js-enabled & {
+      &:hover {
+        cursor: pointer;
+        background: $grey-4;
+      }
+
+      &-right {
+        display: table-cell;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $nta-light;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+
+    &-button {
+      color: $govuk-blue;
+      cursor: pointer;
+      font-family: $nta-light;
+      font-weight: 700;
+      text-transform: none;
+      font-size: 24px;
+      line-height: 1.25;
+      background: none;
+      border: 0;
+      padding-left: 0;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+
+  &__content {
+    display: block;
+    padding: 10px 0 30px 0;
+
+    .js-accordion--js-enabled & {
+      display: none;
+    }
+
+    .js-accordion__section--open & {
+      display: block;
+    }
+  }
+
+  @media(max-width: 640px) {
+    &__header {
+      &-right {
+        text-align: right;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 1.2;
+      &-button {
+        font-size: 18px;
+        line-height: 1.2; 
+      }
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  @media print {
+    padding-bottom: 60px;
+
+    &__content {
+      display: block;
+    }
+
+    &__header {
+      &-icon {
+        display: block !important;
+      }
+    }
+
+    &__title {
+      &-button {
+        display: block !important;
+      }
+    }
+
+  }
+
+}

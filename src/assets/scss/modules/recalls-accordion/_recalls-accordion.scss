@@ -1,0 +1,32 @@
+.recalls-accordion {
+
+  &__error-message {
+    display: none;
+    .recalls-accordion--error-message-visible & {
+      display: block;
+    }
+  }
+
+  &__no-js-alternative {
+    display: none;
+    .recalls-accordion--no-js & {
+      display: block;
+    }
+  }
+
+  &__loading {
+    display: none;
+    text-align: center;
+    .recalls-accordion--loading & {
+      display: block;
+    }
+  }
+
+  &__output {
+    display: none;
+    .recalls-accordion--show-output & {
+      display: block;
+    }
+  }
+
+}

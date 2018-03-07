@@ -1,0 +1,18 @@
+.styleguide-library{
+
+  &__right {
+    width: calc( 100% - 250px );
+    float: right;
+    min-height: 100%;
+    @media(max-width: 800px) {
+      width: 100%;
+      float: initial;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

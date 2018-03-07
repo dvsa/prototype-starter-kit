@@ -1,0 +1,52 @@
+.list-alpha {
+  list-style-type: lower-alpha;
+  padding-left: 20px;
+}
+
+.list-roman {
+    list-style-type: lower-roman;
+    padding-left: 20px;
+}
+
+ol.list-decimal {
+    list-style-type: decimal;
+    padding-left: 20px;
+
+    &--side {
+        @include media(desktop) {
+            padding-left: 26px;
+        }
+    }
+}
+
+.list-small {
+    @include core-16;
+}
+
+ol[class^="list-"] li,
+ul[class^="list-"] li {
+    list-style-type: inherit;
+}
+
+.borderless {
+
+    td {
+        border: none;
+    }
+}
+
+// multi-level bullet list, "extends" list-bullet
+.list-bullet {
+    ul {
+        padding-left:20px;
+        & > li {
+            list-style:circle;
+        }
+        & ul {
+            padding-left:20px;
+            & > li {
+                list-style:square;
+            }
+        }
+    }
+}

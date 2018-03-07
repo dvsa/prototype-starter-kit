@@ -1,0 +1,25 @@
+/*!
+ * 
+ * Package: {{packageName}}
+ * Version: {{packageVersion}}
+ * Author: {{packageAuthor}}
+ * Contributors: {{packageContributors}}
+ * Source: https://github.com/dvsa/front-end
+ * Timestamp: {{packageTimestamp}}
+ * 
+ */
+ 
+// GOVUK
+@import 'gds/gds';
+
+// Mixins
+@import 'mixins/mixins';
+
+// Variables
+@import 'variables';
+
+// Old MTS Comoponents
+@import 'mts/mts';
+
+// Custom Modules
+@import 'modules/modules';

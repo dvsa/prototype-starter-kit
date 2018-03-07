@@ -1,0 +1,17 @@
+{% extends 'layouts/default.layout.njk' %}
+
+{% set pageTitle = 'Prototypes' %}
+
+{% block content %}
+
+  {{ components.pageHeading('Prototypes', 'Prototype Starter Kit') }}
+
+  {% call components.gridRow() %}
+
+    {% call components.columnFull() %}
+      
+    {%- endcall %}
+
+  {%- endcall %}
+  
+{% endblock %}
