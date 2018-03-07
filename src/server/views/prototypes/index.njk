@@ -8,7 +8,10 @@
 
   {% call components.gridRow() %}
 
-    {% call components.columnFull() %}
+    {% call components.columnOneThird() %}
+
+      {{ components.heading(text='Create Account', tag='h2', size='medium', url='/prototypes/create-account') }}
+      {{ components.paragraph(text='Creating an account user journey prototype.') }}
       
     {%- endcall %}
 

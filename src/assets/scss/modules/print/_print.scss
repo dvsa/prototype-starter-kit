@@ -1,8 +1,0 @@
-.print-show {
-  display: none !important;
-}
-
-@media print {
-  @import 'partials/misc';
-  @import 'partials/header';
-}

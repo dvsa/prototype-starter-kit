@@ -1,8 +1,0 @@
-&__header {
-  @include bold-36;
-  margin-top: em(25, 24);
-
-  @include media(tablet) {
-    margin-top: em(45, 36);
-  }
-}
