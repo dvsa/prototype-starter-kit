@@ -1,7 +1,7 @@
 {
   "name": "dvsa/prototype-starter-kit",
   "description": "Node/express starter kit to be used for prototyping applications. Includes all GOVUK styles and assets.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dvsa/front-end",
   "license": "MIT",
   "authors": [

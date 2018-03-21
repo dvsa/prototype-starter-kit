@@ -1,6 +1,6 @@
 {
   "name": "prototype-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starter node/express app kit to be used for prototyping applications. Includes all GOVUK styles and assets.",
   "main": "index.js",
   "scripts": {
